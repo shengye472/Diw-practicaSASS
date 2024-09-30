@@ -1,0 +1,5 @@
+@each $name, $size in $width {
+    .background-#{$name} {
+      width: $size;
+    }
+} 
