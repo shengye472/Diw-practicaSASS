@@ -1,5 +1,34 @@
-@each $key,$value in $margin {
-    .g--margin-#{$key} {
+.g--margin {
+  @each $key, $value in $margin {
+    &-#{$key} {
       margin: $value;
     }
+
+    &-top-#{$key} {
+      margin-top: $value;
+    }
+
+    &--bottom-#{$key} {
+      margin-bottom: $value;
+    }
+
+
+    &-right-#{$key} {
+      margin-right: $value;
+    }
+
+    &-left-#{$key} {
+      margin-left: $value;
+    }
+
+    &-horizontal-#{$key} {
+      margin-right: $value ;
+      margin-left: $value;
+    }
+
+    &-vertical-#{$key} {
+      margin-top: $value;
+      margin-bottom: $value;
+    }
   }
+}

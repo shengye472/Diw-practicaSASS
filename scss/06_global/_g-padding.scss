@@ -1,5 +1,34 @@
-@each $key,$value in $padding {
-    .g--padding-#{$key} {
-      padding: $value;
+.g--padding {
+    @each $key, $value in $padding {
+      &-#{$key} {
+        padding: $value;
+      }
+  
+      &-top-#{$key} {
+        padding-top: $value;
+      }
+  
+      &--bottom-#{$key} {
+        padding-bottom: $value;
+      }
+  
+  
+      &-right-#{$key} {
+        padding-right: $value;
+      }
+  
+      &-left-#{$key} {
+        padding-left: $value;
+      }
+  
+      &-horizontal-#{$key} {
+        padding-right: $value ;
+        padding-left: $value;
+      }
+  
+      &-vertical-#{$key} {
+        padding-top: $value;
+        padding-bottom: $value;
+      }
     }
   }
