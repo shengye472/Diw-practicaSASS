@@ -1,5 +1,5 @@
 @each $name, $size in $width {
-    .background-#{$name} {
+    .g--wodth-#{$name} {
       width: $size;
     }
 } 

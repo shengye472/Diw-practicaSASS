@@ -1,5 +1,5 @@
 @each $name, $size in $height {
-    .background-#{$name} {
+    .g--height-#{$name} {
       height: $size;
     }
 } 
