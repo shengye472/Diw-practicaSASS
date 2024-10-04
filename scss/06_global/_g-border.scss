@@ -1,0 +1,18 @@
+@each $key,$value in $border {
+    .g--border-#{$key}{
+        border-width:#{$value};
+        
+        &__top-#{$key}{
+            border-top: #{$value};
+        }
+        &__bottom-#{$key}{
+            border-bottom: #{$value};
+        }
+        &__left-#{$key}{
+            border-left: #{$value};
+        }
+        &__right-#{$key}{
+            border-right: #{$value};
+        }
+    }
+}
