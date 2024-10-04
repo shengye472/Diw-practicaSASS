@@ -1,7 +1,6 @@
 
 /scss
   /01_utilities
-    _color
     _variables_css
     _variables_scss
     _variables
@@ -11,6 +10,8 @@
     _reset
   /03_layout
     _flex
+    _columns
+      --valor
     _horizontal
     _vertical
     _grid
@@ -26,9 +27,13 @@
     _desplegable
     _tabla
     _formulario
+    _text
+    _etiqueta
+    _title
   /05_pages
   /06_global
     _padding
+    _color
     _width
     _height
     _margin
