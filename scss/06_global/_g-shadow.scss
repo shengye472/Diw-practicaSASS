@@ -1,0 +1,10 @@
+.g--shadow {
+    @each $name, $size in $shadow {
+        &-box-#{$name}{
+            box-shadow: $size;
+        }
+        &-text-#{$name}{
+            text-shadow: $size;
+        }
+    }
+}
