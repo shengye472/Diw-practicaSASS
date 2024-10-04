@@ -1,0 +1,9 @@
+.l-columns {
+    display: grid;
+    flex-wrap: wrap;
+    gap: 16px; // Preguntar si variarlo al grupo
+
+    &--6 {
+        width: calc((100% - 16px * 5) / 6);
+    }
+}
