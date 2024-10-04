@@ -1,9 +1,11 @@
-.l-columns {
-    display: grid;
-    flex-wrap: wrap;
-    gap: 16px; // Preguntar si variarlo al grupo
+@for $i from 1 through 12 {
+    .l-columns {
+        display: grid;
+        grid-template-columns: repeat($i, 1fr);
+        gap: 16px;
 
-    &--6 {
-        width: calc((100% - 16px * 5) / 6);
+        &--#{$i} {
+            width: calc((100% - 16px * ($i - 1)) / $i);
+        }
     }
 }
