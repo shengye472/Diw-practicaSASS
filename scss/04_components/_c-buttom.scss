@@ -1,0 +1,36 @@
+.c-boton {
+    &--funcion {
+        &-principal {
+            background-color: var(--color-principal-5);
+        }
+
+        &-alternative {
+            background-color: var(--color-alternative-5);
+        }
+
+        &-danger {
+            background-color: var(--color-red-5);
+        }
+        &-info{
+            background-color:var(--color-blue-7);
+        }
+
+    
+    }
+
+    &--importancia {
+        &-secundaria {
+            color: var(--color-principal);
+            background-color: var(--color-fondo);
+            border: 1px solid var(--color-principal);
+
+        }
+
+        &-terciaria {
+            color: var(--color-principal);
+            background-color: var(--color-fondo);
+            border: 0px;
+        }
+    }
+
+}

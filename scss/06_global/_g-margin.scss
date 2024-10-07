@@ -3,7 +3,8 @@
     &-#{$key} {
       margin: $value;
     }
-
+  }
+  @each $key, $value in $margin {
     &-top-#{$key} {
       margin-top: $value;
     }
