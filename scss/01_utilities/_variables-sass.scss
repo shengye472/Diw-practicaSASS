@@ -155,3 +155,15 @@ $shadow: (
     "7": unquote("0 25px 50px -12px rgba(0, 0, 0, 0.25)"),
     "inset": unquote("inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692)")
 );
+
+$colors: (
+    "principal": (#7c2d12, #9a3412, #c2410c, #ea580c, #f97316, #fb923c, #fdba74, #fed7aa, #ffedd5),
+    "alternative":(#312e81, #3730a3, #4338ca, #4f46e5, #6366f1, #818cf8, #a5b4fc, #c7d2fe, #e0e7ff),
+    "red":(#811D1D, #981B1B, #BA1C1C, #DC2828, #EF4343, #F87272, #FCA6A6, #FEC8C8, #FEE1E1),
+    "blue":(#1E3B8A, #1E3FAE, #1D4FD7, #2463EB, #3C83F6, #61A6FA, #91C3FD, #BEDBFE, #DCEBFE),
+    "green":(#064C39, #066046, #047756, #059467, #10B77F, #36D399, #6EE7B7, #A5F3CF, #D1FAE5),
+    "yellow":(#76350F, #91400D, #B35309, #DB7706, #F59F0A, #FBBD23, #FCD44F, #FDE68B, #FEF3C8),
+    "purple":(#4D1D95, #5A21B5, #6B26D9, #7C3BED, #895AF6, #A689FA, #C3B4FD, #DED7FE, #EBE7FE),
+    "pink":(#811842, #9B174C, #BF185D, #DB2979, #EC4699, #F471B5, #F9A9D5, #FBD0E8, #FCE8F4),
+    "grey":(#111827, #1f2937, #374151, #4b5563, #6b7280, #9ca3af, #d1d5db, #e5e7eb, #f3f4f6,)
+);
