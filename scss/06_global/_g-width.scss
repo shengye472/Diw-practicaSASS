@@ -1,5 +1,5 @@
 @each $name, $size in $width {
-    .g--wodth-#{$name} {
+    .g--width-#{$name} {
       width: $size;
     }
 } 

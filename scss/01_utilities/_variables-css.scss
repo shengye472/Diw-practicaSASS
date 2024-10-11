@@ -1,0 +1,9 @@
+* {
+    @each $name, $values in $colors {
+      $counter: 1;
+      @each $color in $values {
+        --color-#{$name}-#{$counter}: #{$color};
+        $counter: $counter + 1;
+      }
+    }
+  }
