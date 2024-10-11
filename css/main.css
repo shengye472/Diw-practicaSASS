@@ -1,0 +1,81 @@
+.g--border-1 {
+  border-width: 1px;
+}
+.g--border-1__top-1 {
+  border-top: 1px;
+}
+.g--border-1__bottom-1 {
+  border-bottom: 1px;
+}
+.g--border-1__left-1 {
+  border-left: 1px;
+}
+.g--border-1__right-1 {
+  border-right: 1px;
+}
+
+.g--border-2 {
+  border-width: 2px;
+}
+.g--border-2__top-2 {
+  border-top: 2px;
+}
+.g--border-2__bottom-2 {
+  border-bottom: 2px;
+}
+.g--border-2__left-2 {
+  border-left: 2px;
+}
+.g--border-2__right-2 {
+  border-right: 2px;
+}
+
+.g--border-4 {
+  border-width: 4px;
+}
+.g--border-4__top-4 {
+  border-top: 4px;
+}
+.g--border-4__bottom-4 {
+  border-bottom: 4px;
+}
+.g--border-4__left-4 {
+  border-left: 4px;
+}
+.g--border-4__right-4 {
+  border-right: 4px;
+}
+
+.g--border-6 {
+  border-width: 6px;
+}
+.g--border-6__top-6 {
+  border-top: 6px;
+}
+.g--border-6__bottom-6 {
+  border-bottom: 6px;
+}
+.g--border-6__left-6 {
+  border-left: 6px;
+}
+.g--border-6__right-6 {
+  border-right: 6px;
+}
+
+.g--border-10 {
+  border-width: 10px;
+}
+.g--border-10__top-10 {
+  border-top: 10px;
+}
+.g--border-10__bottom-10 {
+  border-bottom: 10px;
+}
+.g--border-10__left-10 {
+  border-left: 10px;
+}
+.g--border-10__right-10 {
+  border-right: 10px;
+}
+
+/*# sourceMappingURL=main.css.map */
