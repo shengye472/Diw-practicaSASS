@@ -1,8 +1,29 @@
 
-// 01
+/*01 Utilities*/
 @import
+"./01_utilities/variables-css",
 "./01_utilities/variables-sass";
 
-// 06
+/*02 Global*/
+
+/*03 Layout*/
 @import
-"./06_global/g-border";
+"./03_layout/l-columns",
+"./03_layout/l-flex";
+
+/*04 Components*/
+@import
+"./04_components/c-button";
+
+/*05 Pages*/
+
+/*06 Global*/
+@import
+"./06_global/g-border",
+"./06_global/g-font-size",
+"./06_global/g-height",
+"./06_global/g-margin",
+"./06_global/g-padding",
+"./06_global/g-shadow",
+"./06_global/g-width"
+;
