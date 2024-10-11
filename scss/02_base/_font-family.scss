@@ -1,0 +1,5 @@
+@each $name,$value in $fonts{
+    .font-faimly-#{$name}{
+        font-family: #{$value};
+    }
+}

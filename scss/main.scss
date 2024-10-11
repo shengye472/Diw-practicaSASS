@@ -4,10 +4,18 @@
 "./01_utilities/variables-sass",
 "./01_utilities/variables-css";
 
+<<<<<<< HEAD
 
 /*02 Global*/
 
 /*03 Layout*/
+=======
+// 02
+@import
+"./02_base/font-family";
+
+// 06
+>>>>>>> font-family/adrfer03/fix
 @import
 "./03_layout/l-columns",
 "./03_layout/l-flex";
