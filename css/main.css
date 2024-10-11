@@ -1,5 +1,6 @@
 /*01 Utilities*/
-* {
+:root {
+  /*Variables color*/
   --color-principal-1: #7c2d12;
   --color-principal-2: #9a3412;
   --color-principal-3: #c2410c;
@@ -81,9 +82,103 @@
   --color-grey-7: #d1d5db;
   --color-grey-8: #e5e7eb;
   --color-grey-9: #f3f4f6;
+  /*Variables width*/
+  --width-50: 50px;
+  --width-100: 100px;
+  --width-150: 150px;
+  --width-200: 200px;
+  --width-250: 250px;
+  --width-300: 300px;
+  --width-350: 350px;
+  --width-400: 400px;
+  --width-450: 450px;
+  --width-500: 500px;
+  --width-550: 550px;
+  --width-600: 600px;
+  --width-650: 650px;
+  --width-700: 700px;
+  --width-750: 750px;
+  --width-800: 800px;
+  --width-850: 850px;
+  --width-900: 900px;
+  --width-950: 950px;
+  --width-1000: 1000px;
+  --width-5pc: 5%;
+  --width-10pc: 10%;
+  --width-15pc: 15%;
+  --width-20pc: 20%;
+  --width-25pc: 25%;
+  --width-30pc: 30%;
+  --width-35pc: 35%;
+  --width-40pc: 40%;
+  --width-45pc: 45%;
+  --width-50pc: 50%;
+  --width-55pc: 55%;
+  --width-60pc: 60%;
+  --width-65pc: 65%;
+  --width-70pc: 70%;
+  --width-75pc: 75%;
+  --width-80pc: 80%;
+  --width-85pc: 85%;
+  --width-90pc: 90%;
+  --width-95pc: 95%;
+  --width-100pc: 100%;
+  /*Variables height*/
+  --height-50: 50px;
+  --height-100: 100px;
+  --height-150: 150px;
+  --height-200: 200px;
+  --height-250: 250px;
+  --height-300: 300px;
+  --height-350: 350px;
+  --height-400: 400px;
+  --height-450: 450px;
+  --height-500: 500px;
+  --height-550: 550px;
+  --height-600: 600px;
+  --height-650: 650px;
+  --height-700: 700px;
+  --height-750: 750px;
+  --height-800: 800px;
+  --height-850: 850px;
+  --height-900: 900px;
+  --height-950: 950px;
+  --height-1000: 1000px;
+  --height-5pc: 5%;
+  --height-10pc: 10%;
+  --height-15pc: 15%;
+  --height-20pc: 20%;
+  --height-25pc: 25%;
+  --height-30pc: 30%;
+  --height-35pc: 35%;
+  --height-40pc: 40%;
+  --height-45pc: 45%;
+  --height-50pc: 50%;
+  --height-55pc: 55%;
+  --height-60pc: 60%;
+  --height-65pc: 65%;
+  --height-70pc: 70%;
+  --height-75pc: 75%;
+  --height-80pc: 80%;
+  --height-85pc: 85%;
+  --height-90pc: 90%;
+  --height-95pc: 95%;
+  --height-100pc: 100%;
 }
 
 /*02 Global*/
+:root {
+  --font-family: 'Arial, sans-serif';
+  --font-family: 'Verdana, sans-serif';
+  --font-family: 'Tahoma, sans-serif';
+  --font-family: 'Trebuchet MS, sans-serif';
+  --font-family: 'Times New Roman, serif';
+  --font-family: 'Georgia, serif';
+  --font-family: 'Garamond, serif';
+  --font-family: 'Courier New, monospace';
+  --font-family: 'Brush Script MT, cursive';
+}
+
 /*03 Layout*/
 .l-columns {
   display: grid;
@@ -212,6 +307,330 @@
 
 /*05 Pages*/
 /*06 Global*/
+.g--background-principal-1 {
+  background-color: var(--color-principal-1);
+}
+
+.g--background-principal-2 {
+  background-color: var(--color-principal-2);
+}
+
+.g--background-principal-3 {
+  background-color: var(--color-principal-3);
+}
+
+.g--background-principal-4 {
+  background-color: var(--color-principal-4);
+}
+
+.g--background-principal-5 {
+  background-color: var(--color-principal-5);
+}
+
+.g--background-principal-6 {
+  background-color: var(--color-principal-6);
+}
+
+.g--background-principal-7 {
+  background-color: var(--color-principal-7);
+}
+
+.g--background-principal-8 {
+  background-color: var(--color-principal-8);
+}
+
+.g--background-principal-9 {
+  background-color: var(--color-principal-9);
+}
+
+.g--background-alternative-1 {
+  background-color: var(--color-alternative-1);
+}
+
+.g--background-alternative-2 {
+  background-color: var(--color-alternative-2);
+}
+
+.g--background-alternative-3 {
+  background-color: var(--color-alternative-3);
+}
+
+.g--background-alternative-4 {
+  background-color: var(--color-alternative-4);
+}
+
+.g--background-alternative-5 {
+  background-color: var(--color-alternative-5);
+}
+
+.g--background-alternative-6 {
+  background-color: var(--color-alternative-6);
+}
+
+.g--background-alternative-7 {
+  background-color: var(--color-alternative-7);
+}
+
+.g--background-alternative-8 {
+  background-color: var(--color-alternative-8);
+}
+
+.g--background-alternative-9 {
+  background-color: var(--color-alternative-9);
+}
+
+.g--background-red-1 {
+  background-color: var(--color-red-1);
+}
+
+.g--background-red-2 {
+  background-color: var(--color-red-2);
+}
+
+.g--background-red-3 {
+  background-color: var(--color-red-3);
+}
+
+.g--background-red-4 {
+  background-color: var(--color-red-4);
+}
+
+.g--background-red-5 {
+  background-color: var(--color-red-5);
+}
+
+.g--background-red-6 {
+  background-color: var(--color-red-6);
+}
+
+.g--background-red-7 {
+  background-color: var(--color-red-7);
+}
+
+.g--background-red-8 {
+  background-color: var(--color-red-8);
+}
+
+.g--background-red-9 {
+  background-color: var(--color-red-9);
+}
+
+.g--background-blue-1 {
+  background-color: var(--color-blue-1);
+}
+
+.g--background-blue-2 {
+  background-color: var(--color-blue-2);
+}
+
+.g--background-blue-3 {
+  background-color: var(--color-blue-3);
+}
+
+.g--background-blue-4 {
+  background-color: var(--color-blue-4);
+}
+
+.g--background-blue-5 {
+  background-color: var(--color-blue-5);
+}
+
+.g--background-blue-6 {
+  background-color: var(--color-blue-6);
+}
+
+.g--background-blue-7 {
+  background-color: var(--color-blue-7);
+}
+
+.g--background-blue-8 {
+  background-color: var(--color-blue-8);
+}
+
+.g--background-blue-9 {
+  background-color: var(--color-blue-9);
+}
+
+.g--background-green-1 {
+  background-color: var(--color-green-1);
+}
+
+.g--background-green-2 {
+  background-color: var(--color-green-2);
+}
+
+.g--background-green-3 {
+  background-color: var(--color-green-3);
+}
+
+.g--background-green-4 {
+  background-color: var(--color-green-4);
+}
+
+.g--background-green-5 {
+  background-color: var(--color-green-5);
+}
+
+.g--background-green-6 {
+  background-color: var(--color-green-6);
+}
+
+.g--background-green-7 {
+  background-color: var(--color-green-7);
+}
+
+.g--background-green-8 {
+  background-color: var(--color-green-8);
+}
+
+.g--background-green-9 {
+  background-color: var(--color-green-9);
+}
+
+.g--background-yellow-1 {
+  background-color: var(--color-yellow-1);
+}
+
+.g--background-yellow-2 {
+  background-color: var(--color-yellow-2);
+}
+
+.g--background-yellow-3 {
+  background-color: var(--color-yellow-3);
+}
+
+.g--background-yellow-4 {
+  background-color: var(--color-yellow-4);
+}
+
+.g--background-yellow-5 {
+  background-color: var(--color-yellow-5);
+}
+
+.g--background-yellow-6 {
+  background-color: var(--color-yellow-6);
+}
+
+.g--background-yellow-7 {
+  background-color: var(--color-yellow-7);
+}
+
+.g--background-yellow-8 {
+  background-color: var(--color-yellow-8);
+}
+
+.g--background-yellow-9 {
+  background-color: var(--color-yellow-9);
+}
+
+.g--background-purple-1 {
+  background-color: var(--color-purple-1);
+}
+
+.g--background-purple-2 {
+  background-color: var(--color-purple-2);
+}
+
+.g--background-purple-3 {
+  background-color: var(--color-purple-3);
+}
+
+.g--background-purple-4 {
+  background-color: var(--color-purple-4);
+}
+
+.g--background-purple-5 {
+  background-color: var(--color-purple-5);
+}
+
+.g--background-purple-6 {
+  background-color: var(--color-purple-6);
+}
+
+.g--background-purple-7 {
+  background-color: var(--color-purple-7);
+}
+
+.g--background-purple-8 {
+  background-color: var(--color-purple-8);
+}
+
+.g--background-purple-9 {
+  background-color: var(--color-purple-9);
+}
+
+.g--background-pink-1 {
+  background-color: var(--color-pink-1);
+}
+
+.g--background-pink-2 {
+  background-color: var(--color-pink-2);
+}
+
+.g--background-pink-3 {
+  background-color: var(--color-pink-3);
+}
+
+.g--background-pink-4 {
+  background-color: var(--color-pink-4);
+}
+
+.g--background-pink-5 {
+  background-color: var(--color-pink-5);
+}
+
+.g--background-pink-6 {
+  background-color: var(--color-pink-6);
+}
+
+.g--background-pink-7 {
+  background-color: var(--color-pink-7);
+}
+
+.g--background-pink-8 {
+  background-color: var(--color-pink-8);
+}
+
+.g--background-pink-9 {
+  background-color: var(--color-pink-9);
+}
+
+.g--background-grey-1 {
+  background-color: var(--color-grey-1);
+}
+
+.g--background-grey-2 {
+  background-color: var(--color-grey-2);
+}
+
+.g--background-grey-3 {
+  background-color: var(--color-grey-3);
+}
+
+.g--background-grey-4 {
+  background-color: var(--color-grey-4);
+}
+
+.g--background-grey-5 {
+  background-color: var(--color-grey-5);
+}
+
+.g--background-grey-6 {
+  background-color: var(--color-grey-6);
+}
+
+.g--background-grey-7 {
+  background-color: var(--color-grey-7);
+}
+
+.g--background-grey-8 {
+  background-color: var(--color-grey-8);
+}
+
+.g--background-grey-9 {
+  background-color: var(--color-grey-9);
+}
+
 .g--border-1 {
   border-width: 1px;
 }
@@ -349,163 +768,163 @@
 }
 
 .g--height-50 {
-  height: 50px;
+  height: var(--height-50px);
 }
 
 .g--height-100 {
-  height: 100px;
+  height: var(--height-100px);
 }
 
 .g--height-150 {
-  height: 150px;
+  height: var(--height-150px);
 }
 
 .g--height-200 {
-  height: 200px;
+  height: var(--height-200px);
 }
 
 .g--height-250 {
-  height: 250px;
+  height: var(--height-250px);
 }
 
 .g--height-300 {
-  height: 300px;
+  height: var(--height-300px);
 }
 
 .g--height-350 {
-  height: 350px;
+  height: var(--height-350px);
 }
 
 .g--height-400 {
-  height: 400px;
+  height: var(--height-400px);
 }
 
 .g--height-450 {
-  height: 450px;
+  height: var(--height-450px);
 }
 
 .g--height-500 {
-  height: 500px;
+  height: var(--height-500px);
 }
 
 .g--height-550 {
-  height: 550px;
+  height: var(--height-550px);
 }
 
 .g--height-600 {
-  height: 600px;
+  height: var(--height-600px);
 }
 
 .g--height-650 {
-  height: 650px;
+  height: var(--height-650px);
 }
 
 .g--height-700 {
-  height: 700px;
+  height: var(--height-700px);
 }
 
 .g--height-750 {
-  height: 750px;
+  height: var(--height-750px);
 }
 
 .g--height-800 {
-  height: 800px;
+  height: var(--height-800px);
 }
 
 .g--height-850 {
-  height: 850px;
+  height: var(--height-850px);
 }
 
 .g--height-900 {
-  height: 900px;
+  height: var(--height-900px);
 }
 
 .g--height-950 {
-  height: 950px;
+  height: var(--height-950px);
 }
 
 .g--height-1000 {
-  height: 1000px;
+  height: var(--height-1000px);
 }
 
 .g--height-5pc {
-  height: 5%;
+  height: var(--height-5%);
 }
 
 .g--height-10pc {
-  height: 10%;
+  height: var(--height-10%);
 }
 
 .g--height-15pc {
-  height: 15%;
+  height: var(--height-15%);
 }
 
 .g--height-20pc {
-  height: 20%;
+  height: var(--height-20%);
 }
 
 .g--height-25pc {
-  height: 25%;
+  height: var(--height-25%);
 }
 
 .g--height-30pc {
-  height: 30%;
+  height: var(--height-30%);
 }
 
 .g--height-35pc {
-  height: 35%;
+  height: var(--height-35%);
 }
 
 .g--height-40pc {
-  height: 40%;
+  height: var(--height-40%);
 }
 
 .g--height-45pc {
-  height: 45%;
+  height: var(--height-45%);
 }
 
 .g--height-50pc {
-  height: 50%;
+  height: var(--height-50%);
 }
 
 .g--height-55pc {
-  height: 55%;
+  height: var(--height-55%);
 }
 
 .g--height-60pc {
-  height: 60%;
+  height: var(--height-60%);
 }
 
 .g--height-65pc {
-  height: 65%;
+  height: var(--height-65%);
 }
 
 .g--height-70pc {
-  height: 70%;
+  height: var(--height-70%);
 }
 
 .g--height-75pc {
-  height: 75%;
+  height: var(--height-75%);
 }
 
 .g--height-80pc {
-  height: 80%;
+  height: var(--height-80%);
 }
 
 .g--height-85pc {
-  height: 85%;
+  height: var(--height-85%);
 }
 
 .g--height-90pc {
-  height: 90%;
+  height: var(--height-90%);
 }
 
 .g--height-95pc {
-  height: 95%;
+  height: var(--height-95%);
 }
 
 .g--height-100pc {
-  height: 100%;
+  height: var(--height-100%);
 }
 
 .g--margin-2 {
@@ -1003,163 +1422,163 @@
 }
 
 .g--width-50 {
-  width: 50px;
+  width: var(--width-50px);
 }
 
 .g--width-100 {
-  width: 100px;
+  width: var(--width-100px);
 }
 
 .g--width-150 {
-  width: 150px;
+  width: var(--width-150px);
 }
 
 .g--width-200 {
-  width: 200px;
+  width: var(--width-200px);
 }
 
 .g--width-250 {
-  width: 250px;
+  width: var(--width-250px);
 }
 
 .g--width-300 {
-  width: 300px;
+  width: var(--width-300px);
 }
 
 .g--width-350 {
-  width: 350px;
+  width: var(--width-350px);
 }
 
 .g--width-400 {
-  width: 400px;
+  width: var(--width-400px);
 }
 
 .g--width-450 {
-  width: 450px;
+  width: var(--width-450px);
 }
 
 .g--width-500 {
-  width: 500px;
+  width: var(--width-500px);
 }
 
 .g--width-550 {
-  width: 550px;
+  width: var(--width-550px);
 }
 
 .g--width-600 {
-  width: 600px;
+  width: var(--width-600px);
 }
 
 .g--width-650 {
-  width: 650px;
+  width: var(--width-650px);
 }
 
 .g--width-700 {
-  width: 700px;
+  width: var(--width-700px);
 }
 
 .g--width-750 {
-  width: 750px;
+  width: var(--width-750px);
 }
 
 .g--width-800 {
-  width: 800px;
+  width: var(--width-800px);
 }
 
 .g--width-850 {
-  width: 850px;
+  width: var(--width-850px);
 }
 
 .g--width-900 {
-  width: 900px;
+  width: var(--width-900px);
 }
 
 .g--width-950 {
-  width: 950px;
+  width: var(--width-950px);
 }
 
 .g--width-1000 {
-  width: 1000px;
+  width: var(--width-1000px);
 }
 
 .g--width-5pc {
-  width: 5%;
+  width: var(--width-5%);
 }
 
 .g--width-10pc {
-  width: 10%;
+  width: var(--width-10%);
 }
 
 .g--width-15pc {
-  width: 15%;
+  width: var(--width-15%);
 }
 
 .g--width-20pc {
-  width: 20%;
+  width: var(--width-20%);
 }
 
 .g--width-25pc {
-  width: 25%;
+  width: var(--width-25%);
 }
 
 .g--width-30pc {
-  width: 30%;
+  width: var(--width-30%);
 }
 
 .g--width-35pc {
-  width: 35%;
+  width: var(--width-35%);
 }
 
 .g--width-40pc {
-  width: 40%;
+  width: var(--width-40%);
 }
 
 .g--width-45pc {
-  width: 45%;
+  width: var(--width-45%);
 }
 
 .g--width-50pc {
-  width: 50%;
+  width: var(--width-50%);
 }
 
 .g--width-55pc {
-  width: 55%;
+  width: var(--width-55%);
 }
 
 .g--width-60pc {
-  width: 60%;
+  width: var(--width-60%);
 }
 
 .g--width-65pc {
-  width: 65%;
+  width: var(--width-65%);
 }
 
 .g--width-70pc {
-  width: 70%;
+  width: var(--width-70%);
 }
 
 .g--width-75pc {
-  width: 75%;
+  width: var(--width-75%);
 }
 
 .g--width-80pc {
-  width: 80%;
+  width: var(--width-80%);
 }
 
 .g--width-85pc {
-  width: 85%;
+  width: var(--width-85%);
 }
 
 .g--width-90pc {
-  width: 90%;
+  width: var(--width-90%);
 }
 
 .g--width-95pc {
-  width: 95%;
+  width: var(--width-95%);
 }
 
 .g--width-100pc {
-  width: 100%;
+  width: var(--width-100%);
 }
 
 /*# sourceMappingURL=main.css.map */

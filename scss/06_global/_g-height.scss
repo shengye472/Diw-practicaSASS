@@ -1,5 +1,5 @@
 @each $name, $size in $height {
     .g--height-#{$name} {
-      height: $size;
+      height: var(--height-#{$size});
     }
 } 
