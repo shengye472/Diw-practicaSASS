@@ -23,7 +23,7 @@
     --border-bottom-#{$key} : #{$value};
     --border-left-#{$key} : #{$value};
     --border-right-#{$key} : #{$value};
-
+  }
   /*Variables margin*/
   @each $name, $value in $margin{
     --padding-#{$name}: #{$value};
@@ -33,6 +33,9 @@
   @each $name, $value in $padding{
     --padding-#{$name}: #{$value};
   }
-}
 
+  /*Variables shadow*/
+  @each $name, $value in $shadow{
+    --shadow-#{$name}: #{$value};
+  }
 }
