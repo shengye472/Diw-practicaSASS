@@ -23,6 +23,16 @@
     --border-bottom-#{$key} : #{$value};
     --border-left-#{$key} : #{$value};
     --border-right-#{$key} : #{$value};
+
+  /*Variables margin*/
+  @each $name, $value in $margin{
+    --padding-#{$name}: #{$value};
+  }
+
+  /*Variables padding*/
+  @each $name, $value in $padding{
+    --padding-#{$name}: #{$value};
+  }
 }
 
 }

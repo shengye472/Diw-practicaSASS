@@ -1,38 +1,36 @@
 .g--padding {
   @each $key, $value in $padding {
     &-#{$key} {
-      padding: $value;
+      padding: var(--padding-#{$key});
     }
   }
 
   @each $key, $value in $padding {
-
-
     &-top-#{$key} {
-      padding-top: $value;
+      padding-top: var(--padding-#{$key});
     }
 
     &-bottom-#{$key} {
-      padding-bottom: $value;
+      padding-bottom: var(--padding-#{$key});
     }
 
 
     &-right-#{$key} {
-      padding-right: $value;
+      padding-right: var(--padding-#{$key});
     }
 
     &-left-#{$key} {
-      padding-left: $value;
+      padding-left: var(--padding-#{$key});
     }
 
     &-horizontal-#{$key} {
-      padding-right: $value ;
-      padding-left: $value;
+      padding-right: var(--padding-#{$key});
+      padding-left: var(--padding-#{$key});
     }
 
     &-vertical-#{$key} {
-      padding-top: $value;
-      padding-bottom: $value;
+      padding-top: var(--padding-#{$key});
+      padding-bottom: var(--padding-#{$key});
     }
   }
 }
