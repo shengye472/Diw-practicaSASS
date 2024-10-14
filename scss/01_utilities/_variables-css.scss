@@ -1,7 +1,9 @@
 :root {
+
   /*Variables color*/
   @each $name, $values in $colors {
     $counter: 1;
+
     @each $color in $values {
       --color-#{$name}-#{$counter}: #{$color};
       $counter: $counter + 1;
@@ -12,8 +14,14 @@
   @each $name, $size in $width {
     --width-#{$name}: #{$size};
   }
+
   /*Variables height*/
   @each $name, $size in $height {
     --height-#{$name}: #{$size};
+  }
+
+  // Variables font-size
+  @each $name, $value in $font-size {
+    --font-size-#{$name}: #{$value};
   }
 }

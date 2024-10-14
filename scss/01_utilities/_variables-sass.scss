@@ -24,20 +24,12 @@ $margin: (
 );
 
 $font-size: (
-    "4": 4px,
-    "8": 8px,
-    "10": 10px,
-    "14": 14px,
-    "16": 16px,
-    "20": 20px,
-    "24": 24px,
-    "32": 32px,
-    "36": 36px,
-    "48": 48px,
-    "52": 52px,
-    "60": 60px,
-    "64": 64px,
-    "93": 93px
+    "s": "10px",
+    "m": "20px",
+    "l": "24px",
+    "xl": "32px",
+    "xxl": "42px",
+    "xxxl": "48px"
 );
 
 $height: (
@@ -83,8 +75,6 @@ $height: (
     "90pc": 90%,
     "95pc": 95%,
     "100pc": 100%
-
-
 );
 
 $width: (
@@ -131,8 +121,6 @@ $width: (
     "90pc": 90%,
     "95pc": 95%,
     "100pc": 100%
-
-
 );
 
 $border: (
@@ -164,10 +152,10 @@ $colors: (
     "yellow":(#76350F, #91400D, #B35309, #DB7706, #F59F0A, #FBBD23, #FCD44F, #FDE68B, #FEF3C8),
     "purple":(#4D1D95, #5A21B5, #6B26D9, #7C3BED, #895AF6, #A689FA, #C3B4FD, #DED7FE, #EBE7FE),
     "pink":(#811842, #9B174C, #BF185D, #DB2979, #EC4699, #F471B5, #F9A9D5, #FBD0E8, #FCE8F4),
-    "grey":(#111827, #1f2937, #374151, #4b5563, #6b7280, #9ca3af, #d1d5db, #e5e7eb, #f3f4f6,)
+    "grey":(#111827, #1f2937, #374151, #4b5563, #6b7280, #9ca3af, #d1d5db, #e5e7eb, #f3f4f6, )
 );
 
-$fonts:(
+$fonts: (
     "arial" : "'Arial, sans-serif'",
     "verdana" : "'Verdana, sans-serif'",
     "tahoma" : "'Tahoma, sans-serif'",
@@ -176,5 +164,5 @@ $fonts:(
     "georgia" : "'Georgia, serif'",
     "garamond" : "'Garamond, serif'",
     "courier" : "'Courier New, monospace'",
-    "brushScript" : "'Brush Script MT, cursive'" 
+    "brushScript" : "'Brush Script MT, cursive'"
 );
