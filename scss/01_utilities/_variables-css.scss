@@ -21,13 +21,21 @@
   }
 
   // Variables border
-  @each $key, $value in $border {
+  @each $key,$value in $border {
     --border-width: #{$value};
-    --border-top-#{$key} : #{$value};
-    --border-bottom-#{$key} : #{$value};
-    --border-left-#{$key} : #{$value};
-    --border-right-#{$key} : #{$value};
-  }
+    --border-top-width-#{$key} : #{$value};
+    --border-bottom-width-#{$key} : #{$value};
+    --border-left-width-#{$key} : #{$value};
+    --border-right-width-#{$key} : #{$value};
+}
+
+@each $value in $border-style {
+  --border-style-#{$value} : #{$value};
+}
+
+@each $key,$value in $border-radius{
+  --border-radius-#{$key} : #{$value};
+}
 
   /*Variables margin*/
   @each $name, $value in $margin {

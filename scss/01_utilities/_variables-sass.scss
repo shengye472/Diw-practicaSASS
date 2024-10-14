@@ -166,3 +166,18 @@ $fonts: (
     "courier" : "'Courier New, monospace'",
     "brushScript" : "'Brush Script MT, cursive'"
 );
+
+$border-style:(
+    "dotted",
+    "dashed",
+    "solid",
+    "double",
+    "none",
+    "hidden"
+);
+
+$border-radius:(
+    "1" : "5px",
+    "2" : "8px",
+    "3" : "12px"
+)

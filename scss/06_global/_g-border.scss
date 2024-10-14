@@ -1,5 +1,9 @@
+.g--border{
+
+// BORDER WIDTH
+
 @each $key,$value in $border {
-    .g--border-#{$key}{
+    &-#{$key}{
         border-width: var(--border-width-#{$value});
     
         &-top-#{$key}{
@@ -16,4 +20,62 @@
         }
     }
     
+}
+
+
+// BORDER STYLE
+
+@each $value in $border-style {
+    &--style-#{$key} {
+        border-style: var(--border-style-#{$value});
+    }
+    &-top--style-#{$key} {
+        border-top-style: var(--border-style-#{$value});
+    }
+    &-bottom--style-#{$key} {
+        border-bottom-style: var(--border-style-#{$value});
+    }
+    &-left--style-#{$key} {
+        border-left-style: var(--border-style-#{$value});
+    }
+    &-right--style-#{$key} {
+        border-right-style: var(--border-style-#{$value});
+    }
+
+}
+
+// BORDER COLOR
+
+@each $name,$values in $colors {
+    $counter: 1;
+    @each $color in $values {
+        &--color-#{$name}-#{$counter}{
+            border-color: var(--color-#{$name}-#{$counter});
+        }
+        &-top--color-#{$name}-#{$counter}{
+            border-top-color: var(--color-#{$name}-#{$counter});
+        }
+        &-bottom--color-#{$name}-#{$counter}{
+            border-bottom-color: var(--color-#{$name}#{$counter});
+        }
+        &-left--color-#{$name}-#{$counter}{
+            border-left-color: var(--color-#{$name}-#{$counter});
+        }
+        &-right--color-#{$name}-#{$counter}{
+            border-right-color: var(--color-#{$name}-#{$counter});
+        }
+        $counter: $counter + 1;
+      }
+      
+}
+
+
+// BORDER RADIUS
+
+@each $key,$value in $border-radius {
+    &--radius-#{$key}{
+        border-radius: var(--border-radius-#{$key});
+    }
+}
+
 }
