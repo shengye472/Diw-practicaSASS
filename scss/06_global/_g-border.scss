@@ -25,21 +25,21 @@
 
 // BORDER STYLE
 
-@each $value in $border-style {
+@each $key in $border-style {
     &--style-#{$key} {
-        border-style: var(--border-style-#{$value});
+        border-style: var(--border-style-#{$key});
     }
     &-top--style-#{$key} {
-        border-top-style: var(--border-style-#{$value});
+        border-top-style: var(--border-style-#{$key});
     }
     &-bottom--style-#{$key} {
-        border-bottom-style: var(--border-style-#{$value});
+        border-bottom-style: var(--border-style-#{$key});
     }
     &-left--style-#{$key} {
-        border-left-style: var(--border-style-#{$value});
+        border-left-style: var(--border-style-#{$key});
     }
     &-right--style-#{$key} {
-        border-right-style: var(--border-style-#{$value});
+        border-right-style: var(--border-style-#{$key});
     }
 
 }
