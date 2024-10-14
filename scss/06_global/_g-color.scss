@@ -1,0 +1,10 @@
+@each $name, $values in $colors{
+    $counter: 1;
+    @each $color in $values{
+        .g--color-#{$name}-#{$counter}{
+            color: var(--color-#{$name}-#{$counter});
+        }
+        $counter: $counter + 1;
+    }
+
+}
