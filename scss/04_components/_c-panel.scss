@@ -1,9 +1,10 @@
 .c-panel{
     --c-panel-padding-vertical: var(--padding-4);
     --c-panel-padding-horizontal: var(--padding-4);
-    --c-panel-width: var(--width-65pc);
-    --c-panel-height: var(--height-65pc);
-    
+    --c-panel-vertical-width: var(--width-60pc);
+    --c-panel-vertical-height: var(--height-90pc);
+    --c-panel-horizontal-width: var(--width-90pc);
+    --c-panel-horizontal-height: var(--height-60pc);
 
     &--funcion{
         &-principal {
@@ -38,12 +39,12 @@
     }
 
     &__vertical {
-        width: var(--width-60pc);
-        height: var(--height-90pc);
+        width: var(--c-panel-vertical-width);
+        height: var(--c-panel-vertical-height);
     }
 
     &__horizontal {
-        width: var(--width-90pc);
-        height: var(--height-60pc);
+        width: var(--c-panel-horizontal-width);
+        height: var(--c-panel-horizontal-height);
     }
 }
