@@ -1,13 +1,12 @@
-:root {
-  /*Variables color*/
-  @each $name, $values in $colors {
-    $counter: 1;
-    @each $color in $values {
-      --color-#{$name}-#{$counter}: #{$color};
-      $counter: $counter + 1;
+* {
+    @each $name, $values in $colors {
+      $counter: 1;
+      @each $color in $values {
+        --color-#{$name}-#{$counter}: #{$color};
+        $counter: $counter + 1;
+      }
     }
-  }
-
+    
   /*Variables width*/
   @each $name, $size in $width {
     --width-#{$name}: #{$size};
@@ -16,4 +15,14 @@
   @each $name, $size in $height {
     --height-#{$name}: #{$size};
   }
+
+  // Variables border
+  @each $key,$value in $border {
+    --border-width: #{$value};
+    --border-top-#{$key} : #{$value};
+    --border-bottom-#{$key} : #{$value};
+    --border-left-#{$key} : #{$value};
+    --border-right-#{$key} : #{$value};
+}
+
 }

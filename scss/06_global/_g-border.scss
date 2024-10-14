@@ -1,18 +1,19 @@
 @each $key,$value in $border {
     .g--border-#{$key}{
-        border-width:#{$value};
-        
+        border-width: var(--border-width-#{$value});
+    
         &-top-#{$key}{
-            border-top: #{$value};
+            border-top-width: var(--border-top-width-#{$value});
         }
         &-bottom-#{$key}{
-            border-bottom: #{$value};
+            border-bottom-width: var(--border-bottom-width-#{$value});
         }
         &-left-#{$key}{
-            border-left: #{$value};
+            border-left-width: var(--border-left-width-#{$value});
         }
         &-right-#{$key}{
-            border-right: #{$value};
+            border-right-width: var(--border-right-width-#{$value});
         }
     }
+    
 }
