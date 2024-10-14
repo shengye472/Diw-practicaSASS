@@ -56,7 +56,7 @@
             border-top-color: var(--color-#{$name}-#{$counter});
         }
         &-bottom--color-#{$name}-#{$counter}{
-            border-bottom-color: var(--color-#{$name}#{$counter});
+            border-bottom-color: var(--color-#{$name}-#{$counter});
         }
         &-left--color-#{$name}-#{$counter}{
             border-left-color: var(--color-#{$name}-#{$counter});

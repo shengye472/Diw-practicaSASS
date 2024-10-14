@@ -1,0 +1,8 @@
+.c-image{
+    --c-image-border-radius: var(--border-radius-1);
+    &-radius{
+        border-radius: var(--c-image-border-radius);
+        width: auto;
+        height: auto;
+    }
+}
