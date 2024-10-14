@@ -1,41 +1,51 @@
-* {
-    @each $name, $values in $colors {
-      $counter: 1;
-      @each $color in $values {
-        --color-#{$name}-#{$counter}: #{$color};
-        $counter: $counter + 1;
-      }
+:root {
+
+  /*Variables color*/
+  @each $name, $values in $colors {
+    $counter: 1;
+
+    @each $color in $values {
+      --color-#{$name}-#{$counter}: #{$color};
+      $counter: $counter + 1;
     }
-    
+  }
+
   /*Variables width*/
   @each $name, $size in $width {
     --width-#{$name}: #{$size};
   }
+
   /*Variables height*/
   @each $name, $size in $height {
     --height-#{$name}: #{$size};
   }
 
   // Variables border
-  @each $key,$value in $border {
+  @each $key, $value in $border {
     --border-width: #{$value};
     --border-top-#{$key} : #{$value};
     --border-bottom-#{$key} : #{$value};
     --border-left-#{$key} : #{$value};
     --border-right-#{$key} : #{$value};
   }
+
   /*Variables margin*/
-  @each $name, $value in $margin{
+  @each $name, $value in $margin {
     --padding-#{$name}: #{$value};
   }
 
   /*Variables padding*/
-  @each $name, $value in $padding{
+  @each $name, $value in $padding {
     --padding-#{$name}: #{$value};
-  }
 
-  /*Variables shadow*/
-  @each $name, $value in $shadow{
-    --shadow-#{$name}: #{$value};
+    // Variables font-size
+    @each $name, $value in $font-size {
+      --font-size-#{$name}: #{$value};
+    }
+
+    /*Variables shadow*/
+    @each $name, $value in $shadow {
+      --shadow-#{$name}: #{$value};
+    }
   }
 }
