@@ -1,0 +1,49 @@
+.c-panel{
+    --c-panel-padding-vertical: var(--padding-4);
+    --c-panel-padding-horizontal: var(--padding-4);
+    --c-panel-width: var(--width-65pc);
+    --c-panel-height: var(--height-65pc);
+    
+
+    &--funcion{
+        &-principal {
+            background-color: var(--color-principal-8);
+        }
+
+        &-alternative {
+            background-color: var(--color-alternative-8);
+        }
+
+        &-danger {
+            background-color: var(--color-red-8);
+        }
+        &-info{
+            background-color:var(--color-blue-8);
+        }
+    }
+
+    &--estilo{
+        &-compacto{
+            --c-panel-padding-vertical: var(--padding-2);
+            --c-panel-padding-horizontal: var(--padding-2);
+        }
+        &-comodo{
+            --c-panel-padding-vertical: var(--padding-6);
+            --c-panel-padding-horizontal: var(--padding-6);
+        }
+        &-extendido{
+            --c-panel-padding-vertical: var(--padding-10);
+            --c-panel-padding-horizontal: var(--padding-10);
+        }
+    }
+
+    &__vertical {
+        width: var(--width-60pc);
+        height: var(--height-90pc);
+    }
+
+    &__horizontal {
+        width: var(--width-90pc);
+        height: var(--height-60pc);
+    }
+}
