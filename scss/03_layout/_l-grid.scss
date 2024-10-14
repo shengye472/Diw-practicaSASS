@@ -1,0 +1,144 @@
+.l-grid {
+    display: grid;
+
+    // Definir número de columnas (de 1 a 12)
+    @for $i from 1 through 12 {
+        &-columns-#{$i} {
+            grid-template-columns: repeat($i, 1fr);
+            gap: 16px;
+            width: calc((100% - 16px * ($i - 1)) / $i);
+        }
+    }
+
+    // Definir filas automáticas
+    &--auto-rows {
+        grid-auto-rows: minmax(100px, auto);
+    }
+
+    &--auto-rows-min {
+        grid-auto-rows: min-content;
+    }
+
+    &--auto-rows-max {
+        grid-auto-rows: max-content;
+    }
+
+    // Definir áreas automáticas
+    &--auto-flow-row {
+        grid-auto-flow: row;
+    }
+
+    &--auto-flow-column {
+        grid-auto-flow: column;
+    }
+
+    &--auto-flow-dense {
+        grid-auto-flow: dense;
+    }
+
+    // Definir número de filas automáticas
+    &--auto-rows-2 {
+        grid-auto-rows: 2fr;
+    }
+
+    &--auto-rows-3 {
+        grid-auto-rows: 3fr;
+    }
+
+    // Alineación de elementos (individuales o todo el grid)
+    &--align-center {
+        align-items: center;
+    }
+
+    &--align-start {
+        align-items: start;
+    }
+
+    &--align-end {
+        align-items: end;
+    }
+
+    &--align-stretch {
+        align-items: stretch;
+    }
+
+    // Justificación del contenido
+    &--justify-center {
+        justify-items: center;
+    }
+
+    &--justify-start {
+        justify-items: start;
+    }
+
+    &--justify-end {
+        justify-items: end;
+    }
+
+    &--justify-stretch {
+        justify-items: stretch;
+    }
+
+    // Alineación del contenido completo
+    &--content-center {
+        align-content: center;
+    }
+
+    &--content-start {
+        align-content: start;
+    }
+
+    &--content-end {
+        align-content: end;
+    }
+
+    &--content-space-between {
+        align-content: space-between;
+    }
+
+    &--content-space-around {
+        align-content: space-around;
+    }
+
+    &--content-stretch {
+        align-content: stretch;
+    }
+
+    // Espaciado entre elementos
+    &--gap-small {
+        gap: 8px;
+    }
+
+    &--gap-medium {
+        gap: 16px;
+    }
+
+    &--gap-large {
+        gap: 24px;
+    }
+
+    // Column Gap y Row Gap individual
+    &--column-gap-small {
+        column-gap: 8px;
+    }
+
+    &--column-gap-medium {
+        column-gap: 16px;
+    }
+
+    &--column-gap-large {
+        column-gap: 24px;
+    }
+
+    &--row-gap-small {
+        row-gap: 8px;
+    }
+
+    &--row-gap-medium {
+        row-gap: 16px;
+    }
+
+    &--row-gap-large {
+        row-gap: 24px;
+    }
+}
