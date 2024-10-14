@@ -20,7 +20,7 @@
     --height-#{$name}: #{$size};
   }
 
-  // Variables border
+  /* Variables border */
   @each $key,$value in $border {
     --border-width: #{$value};
     --border-top-width-#{$key} : #{$value};
@@ -55,5 +55,10 @@
     @each $name, $value in $shadow {
       --shadow-#{$name}: #{$value};
     }
+  }
+
+  /* Variables text-align*/
+  @each $name in $text-align {
+    --text-align-#{$name} : #{$name};
   }
 }
