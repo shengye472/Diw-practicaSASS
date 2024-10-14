@@ -213,7 +213,9 @@
   --padding-48: 48px;
   /*Variables padding*/
   --padding-2: 2px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -230,7 +232,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-4: 4px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -247,7 +251,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-6: 6px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -264,7 +270,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-8: 8px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -281,7 +289,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-10: 10px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -298,7 +308,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-14: 14px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -315,7 +327,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-20: 20px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -332,7 +346,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-24: 24px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -349,7 +365,9 @@
   --shadow-7: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --shadow-inset: inset -3px -3px 7px #ffffffb0, inset 3px 3px 5px rgba(94, 104, 121, 0.692);
   --padding-36: 36px;
-  --font-size-s: 10px;
+  --font-size-xs: 10px;
+  --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -2646,8 +2664,16 @@
   color: var(--color-grey-9);
 }
 
-.g--font-size-s {
+.g--font-size-xs {
   font-size: 10px;
+}
+
+.g--font-size-s {
+  font-size: 14px;
+}
+
+.g--font-size-sm {
+  font-size: 16px;
 }
 
 .g--font-size-m {
