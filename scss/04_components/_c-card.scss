@@ -1,0 +1,62 @@
+.c-card {
+    --c-card-padding-vertical: var(--padding-4);
+    --c-card-padding-horizontal: var(--padding-4);
+    --c-card-vertical-width: var(--width-60pc);
+    --c-card-vertical-height: var(--height-90pc);
+    --c-card-horizontal-width: var(--width-90pc);
+    --c-card-horizontal-height: var(--height-60pc);
+    --c-card-footer-font-size:var(--font-size-s);
+    --c-card-body-font-size:var(--font-size-m);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &--estilo {
+        &-compacto {
+            --c-card-padding-vertical: var(--padding-2);
+            --c-card-padding-horizontal: var(--padding-2);
+        }
+
+        &-comodo {
+            --c-card-padding-vertical: var(--padding-6);
+            --c-card-padding-horizontal: var(--padding-6);
+        }
+
+        &-extendido {
+            --c-card-padding-vertical: var(--padding-10);
+            --c-card-padding-horizontal: var(--padding-10);
+        }
+    }
+
+    &__vertical {
+        width: var(--c-card-vertical-width);
+        height: var(--c-card-vertical-height);
+    }
+
+    &__horizontal {
+        width: var(--c-card-horizontal-width);
+        height: var(--c-card-horizontal-height);
+    }
+
+    &__etiqueta{
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: var(--font-size-m);
+    }
+
+    &__img {
+        align-items: center;
+        width: var(--c-card-horizontal-width);
+    }
+
+    &__body {
+        align-items: flex-start;
+        font-size: var(--font-size-m) ;
+    }
+
+    &__footer {
+        justify-content: flex-end;
+        align-items: flex-start;
+        font-size: var(--font-size-s);
+    }
+}
