@@ -24,7 +24,7 @@ $margin: (
 );
 
 $font-size: (
-    "s": "10px",
+    "s": "14px",
     "m": "20px",
     "l": "24px",
     "xl": "32px",
@@ -79,6 +79,10 @@ $height: (
 
 $width: (
     // Valores en píxeles de 50 en 50
+    "10": 10px,
+    "20": 20px,
+    "30": 30px,
+    "40": 40px,
     "50": 50px,
     "100": 100px,
     "150": 150px,
@@ -167,7 +171,7 @@ $fonts: (
     "brushScript" : "'Brush Script MT, cursive'"
 );
 
-$border-style:(
+$border-style: (
     "dotted",
     "dashed",
     "solid",
@@ -176,15 +180,41 @@ $border-style:(
     "hidden"
 );
 
-$border-radius:(
+$border-radius: (
     "0" : "0px",
     "1" : "5px",
     "2" : "8px",
     "3" : "12px"
 );
 
-$text-align:(
-    "left",
-    "center",
-    "right"
+$text-align: (
+    "left": "left",
+    "center": "center",
+    "right": "right"
+);
+$text-decoration: (
+    "none": "none",
+    "crossed": "line-through"
+);
+$background: (
+    "none": "none"
+);
+$position: (
+    "absolute": "absolute",
+    "relative": "relative"
+);
+$position-move: (
+    10: 10px,
+    20: 20px,
+    30: 30px,
+    40: 40px,
+    50: 50px,
+    60: 60px,
+    70: 70px,
+    80: 80px,
+    90: 90px,
+    100: 100px,
+    200: 200px,
+    300: 300px,
+    400: 400px
 );

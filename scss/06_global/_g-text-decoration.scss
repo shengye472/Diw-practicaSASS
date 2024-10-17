@@ -1,0 +1,11 @@
+.g--text-decoration {
+
+    @each $key, $value in $text-decoration {
+        &-#{$key} {
+            text-decoration: var(--text-decoration-#{$value});
+        }
+    }
+
+
+
+}

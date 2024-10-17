@@ -60,7 +60,26 @@
   }
 
   /* Variables text-align*/
-  @each $name in $text-align {
-    --text-align-#{$name} : #{$name};
+  @each $name, $value in $text-align {
+    --text-align-#{$name} : #{$value};
+  }
+
+  /* Variable text-decoration*/
+  @each $name, $value in $text-decoration {
+    --text-decoration-#{$name}: #{$value};
+  }
+
+  /* Variable background*/
+  @each $name, $value in $background {
+    --background--#{$name}: #{$value};
+  }
+
+  @each $name, $value in $position {
+    --position-#{$name}: #{$value};
+  }
+
+  @each $name, $value in $position-move {
+    --position--right-#{$name}: #{$value};
+    --position--left-#{$name}: #{$value};
   }
 }
