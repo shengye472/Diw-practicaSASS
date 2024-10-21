@@ -3532,7 +3532,7 @@
   text-decoration: var(--text-decoration-none);
 }
 .g--text-decoration-crossed {
-  text-decoration: var(--text-decoration-line-through);
+  text-decoration: var(--text-decoration-crossed);
 }
 
 .g--position-absolute {
