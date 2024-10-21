@@ -47,6 +47,7 @@
     &__img {
         align-items: center;
         width: var(--c-card-horizontal-width);
+        @include box-shadow();
     }
 
     &__body {
