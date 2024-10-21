@@ -1,6 +1,7 @@
 .c-image{
     --c-image-border-radius: var(--border-radius-1);
-    @include box-shadow();
+    --c-image-shadow:var(--color-grey-7);
+    @include box-shadow(--c-image-shadow);
     &-radius{
         border-radius: var(--c-image-border-radius);
         width: auto;
