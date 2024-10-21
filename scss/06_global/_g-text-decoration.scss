@@ -2,7 +2,7 @@
 
     @each $key, $value in $text-decoration {
         &-#{$key} {
-            text-decoration: var(--text-decoration-#{$value});
+            text-decoration: var(--text-decoration-#{$key});
         }
     }
 
