@@ -39,4 +39,12 @@
             align-items: stretch;
         }
     }
+    &__area{
+        flex-grow: 0;
+        @for $i from 1 through 12 {
+            &--grow-#{$i}{
+                flex-grow: $i;
+            }
+        }
+    }
 }

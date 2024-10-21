@@ -492,6 +492,45 @@
 .l-flex--align_items-strech {
   align-items: stretch;
 }
+.l-flex__area {
+  flex-grow: 0;
+}
+.l-flex__area--grow-1 {
+  flex-grow: 1;
+}
+.l-flex__area--grow-2 {
+  flex-grow: 2;
+}
+.l-flex__area--grow-3 {
+  flex-grow: 3;
+}
+.l-flex__area--grow-4 {
+  flex-grow: 4;
+}
+.l-flex__area--grow-5 {
+  flex-grow: 5;
+}
+.l-flex__area--grow-6 {
+  flex-grow: 6;
+}
+.l-flex__area--grow-7 {
+  flex-grow: 7;
+}
+.l-flex__area--grow-8 {
+  flex-grow: 8;
+}
+.l-flex__area--grow-9 {
+  flex-grow: 9;
+}
+.l-flex__area--grow-10 {
+  flex-grow: 10;
+}
+.l-flex__area--grow-11 {
+  flex-grow: 11;
+}
+.l-flex__area--grow-12 {
+  flex-grow: 12;
+}
 
 /*04 Components*/
 .c-boton--funcion-principal {
