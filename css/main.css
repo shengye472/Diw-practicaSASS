@@ -227,6 +227,9 @@
   --padding-20: 20px;
   --padding-24: 24px;
   --padding-36: 36px;
+  --padding-48: 48px;
+  --padding-54: 54px;
+  --padding-60: 60px;
   /*Variables font-size*/
   --font-size-xs: 10px;
   --font-size-s: 14px;
@@ -3155,6 +3158,15 @@
 .g--padding-36 {
   padding: var(--padding-36);
 }
+.g--padding-48 {
+  padding: var(--padding-48);
+}
+.g--padding-54 {
+  padding: var(--padding-54);
+}
+.g--padding-60 {
+  padding: var(--padding-60);
+}
 .g--padding-top-2 {
   padding-top: var(--padding-2);
 }
@@ -3334,6 +3346,66 @@
 .g--padding-vertical-36 {
   padding-top: var(--padding-36);
   padding-bottom: var(--padding-36);
+}
+.g--padding-top-48 {
+  padding-top: var(--padding-48);
+}
+.g--padding-bottom-48 {
+  padding-bottom: var(--padding-48);
+}
+.g--padding-right-48 {
+  padding-right: var(--padding-48);
+}
+.g--padding-left-48 {
+  padding-left: var(--padding-48);
+}
+.g--padding-horizontal-48 {
+  padding-right: var(--padding-48);
+  padding-left: var(--padding-48);
+}
+.g--padding-vertical-48 {
+  padding-top: var(--padding-48);
+  padding-bottom: var(--padding-48);
+}
+.g--padding-top-54 {
+  padding-top: var(--padding-54);
+}
+.g--padding-bottom-54 {
+  padding-bottom: var(--padding-54);
+}
+.g--padding-right-54 {
+  padding-right: var(--padding-54);
+}
+.g--padding-left-54 {
+  padding-left: var(--padding-54);
+}
+.g--padding-horizontal-54 {
+  padding-right: var(--padding-54);
+  padding-left: var(--padding-54);
+}
+.g--padding-vertical-54 {
+  padding-top: var(--padding-54);
+  padding-bottom: var(--padding-54);
+}
+.g--padding-top-60 {
+  padding-top: var(--padding-60);
+}
+.g--padding-bottom-60 {
+  padding-bottom: var(--padding-60);
+}
+.g--padding-right-60 {
+  padding-right: var(--padding-60);
+}
+.g--padding-left-60 {
+  padding-left: var(--padding-60);
+}
+.g--padding-horizontal-60 {
+  padding-right: var(--padding-60);
+  padding-left: var(--padding-60);
+}
+.g--padding-vertical-60 {
+  padding-top: var(--padding-60);
+  padding-bottom: var(--padding-60);
 }
 
 .g--shadow-box-0 {
