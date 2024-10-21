@@ -128,6 +128,10 @@
   --width-95pc: 95%;
   --width-100pc: 100%;
   /*Variables height*/
+  --height-10: 10px;
+  --height-20: 20px;
+  --height-30: 30px;
+  --height-40: 40px;
   --height-50: 50px;
   --height-100: 100px;
   --height-150: 150px;
@@ -2738,6 +2742,22 @@
 
 .g--font-size-xxxl {
   font-size: 48px;
+}
+
+.g--height-10 {
+  height: var(--height-10);
+}
+
+.g--height-20 {
+  height: var(--height-20);
+}
+
+.g--height-30 {
+  height: var(--height-30);
+}
+
+.g--height-40 {
+  height: var(--height-40);
 }
 
 .g--height-50 {
