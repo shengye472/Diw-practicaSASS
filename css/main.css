@@ -228,7 +228,9 @@
   --padding-24: 24px;
   --padding-36: 36px;
   /*Variables font-size*/
+  --font-size-xs: 10px;
   --font-size-s: 14px;
+  --font-size-sm: 16px;
   --font-size-m: 20px;
   --font-size-l: 24px;
   --font-size-xl: 32px;
@@ -513,6 +515,108 @@
   color: var(--color-principal);
   background-color: var(--color-fondo);
   border: 0px;
+}
+
+.c-panel {
+  --c-panel-padding-vertical: var(--padding-4);
+  --c-panel-padding-horizontal: var(--padding-4);
+  --c-panel-vertical-width: var(--width-60pc);
+  --c-panel-vertical-height: var(--height-90pc);
+  --c-panel-horizontal-width: var(--width-90pc);
+  --c-panel-horizontal-height: var(--height-60pc);
+}
+.c-panel--funcion-principal {
+  background-color: var(--color-principal-8);
+}
+.c-panel--funcion-alternative {
+  background-color: var(--color-alternative-8);
+}
+.c-panel--funcion-danger {
+  background-color: var(--color-red-8);
+}
+.c-panel--funcion-info {
+  background-color: var(--color-blue-8);
+}
+.c-panel--estilo-compacto {
+  --c-panel-padding-vertical: var(--padding-2);
+  --c-panel-padding-horizontal: var(--padding-2);
+}
+.c-panel--estilo-comodo {
+  --c-panel-padding-vertical: var(--padding-6);
+  --c-panel-padding-horizontal: var(--padding-6);
+}
+.c-panel--estilo-extendido {
+  --c-panel-padding-vertical: var(--padding-10);
+  --c-panel-padding-horizontal: var(--padding-10);
+}
+.c-panel__vertical {
+  width: var(--c-panel-vertical-width);
+  height: var(--c-panel-vertical-height);
+}
+.c-panel__horizontal {
+  width: var(--c-panel-horizontal-width);
+  height: var(--c-panel-horizontal-height);
+}
+
+.c-image {
+  --c-image-border-radius: var(--border-radius-1);
+}
+.c-image-radius {
+  border-radius: var(--c-image-border-radius);
+  width: auto;
+  height: auto;
+}
+
+.c-card {
+  --c-card-padding-vertical: var(--padding-4);
+  --c-card-padding-horizontal: var(--padding-4);
+  --c-card-vertical-width: var(--width-60pc);
+  --c-card-vertical-height: var(--height-90pc);
+  --c-card-horizontal-width: var(--width-90pc);
+  --c-card-horizontal-height: var(--height-60pc);
+  --c-card-footer-font-size:var(--font-size-s);
+  --c-card-body-font-size:var(--font-size-m);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.c-card--estilo-compacto {
+  --c-card-padding-vertical: var(--padding-2);
+  --c-card-padding-horizontal: var(--padding-2);
+}
+.c-card--estilo-comodo {
+  --c-card-padding-vertical: var(--padding-6);
+  --c-card-padding-horizontal: var(--padding-6);
+}
+.c-card--estilo-extendido {
+  --c-card-padding-vertical: var(--padding-10);
+  --c-card-padding-horizontal: var(--padding-10);
+}
+.c-card__vertical {
+  width: var(--c-card-vertical-width);
+  height: var(--c-card-vertical-height);
+}
+.c-card__horizontal {
+  width: var(--c-card-horizontal-width);
+  height: var(--c-card-horizontal-height);
+}
+.c-card__etiqueta {
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-size: var(--font-size-m);
+}
+.c-card__img {
+  align-items: center;
+  width: var(--c-card-horizontal-width);
+}
+.c-card__body {
+  align-items: flex-start;
+  font-size: var(--font-size-m);
+}
+.c-card__footer {
+  justify-content: flex-end;
+  align-items: flex-start;
+  font-size: var(--font-size-s);
 }
 
 /*05 Pages*/
@@ -2562,8 +2666,16 @@
   color: var(--color-grey-9);
 }
 
+.g--font-size-xs {
+  font-size: 10px;
+}
+
 .g--font-size-s {
   font-size: 14px;
+}
+
+.g--font-size-sm {
+  font-size: 16px;
 }
 
 .g--font-size-m {
