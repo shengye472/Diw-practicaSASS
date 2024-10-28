@@ -3,6 +3,13 @@
     -moz-box-shadow: 2px 10px 24px $name;
     box-shadow: 2px 10px 24px $name;
 }
+
+@mixin padding($name){
+    padding-top: $name;
+    padding-bottom: $name;
+    padding-left: $name;
+    padding-right: $name;
+}
 /*border tamaño, style, color */
 /*
 @mixin border($size,$border-style,$colors){

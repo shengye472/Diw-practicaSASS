@@ -1,47 +1,44 @@
 .c-panel{
-    --c-panel-padding-vertical: var(--padding-6);
-    --c-panel-padding-horizontal: var(--padding-6);
+    --c-panel-padding-comodo: var(--padding-2);
+    --c-panel-padding-compacto: var(--padding-3);
+    --c-panel-padding-extendido: var(--padding-5);
     --c-panel-vertical-width: var(--width-60pc);
     --c-panel-vertical-height: var(--height-90pc);
     --c-panel-horizontal-width: var(--width-90pc);
     --c-panel-horizontal-height: var(--height-60pc);
-    --footer-font-size: var(--font-size-xs);
-    --header-font-size: var(--font-size-xl);
+    --c-panel-footer-font-size: var(--font-size-xs);
+    --c-panel-header-font-size: var(--font-size-xl);
+    --c-panel-background-color-principal: var(--color-principal-8);
+    --c-panel-background-color-alternative: var(--color-alternative-8);
+    --c-panel-background-color-danger: var(--color-red-8);
+    --c-panel-background-color-info: var(--color-blue-8);
 
     &--funcion{
         &-principal {
-            background-color: var(--color-principal-8);
+            background-color: var(--c-panel-background-color-principal);
         }
 
         &-alternative {
-            background-color: var(--color-alternative-8);
+            background-color: var(--c-panel-background-color-alternative);
         }
 
         &-danger {
-            background-color: var(--color-red-8);
+            background-color: var(--c-panel-background-color-danger);
         }
         &-info{
-            background-color:var(--color-blue-8);
+            background-color:var(--c-panel-background-color-info);
         }
     }
 
     &--estilo{
-        padding-top: var(--c-panel-padding-vertical);
-        padding-bottom: var(--c-panel-padding-vertical);
-        padding-left: var(--c-panel-padding-horizontal);
-        padding-right: var(--c-panel-padding-horizontal);
-
         &-compacto{
-            --c-panel-padding-vertical: var(--padding-2);
-            --c-panel-padding-horizontal: var(--padding-2);
+            @include padding(var(--c-panel-padding-compacto));
         }
         &-comodo{
-            --c-panel-padding-vertical: var(--padding-6);
-            --c-panel-padding-horizontal: var(--padding-6);
+          @include padding(var(--c-panel-padding-comodo));
         }
         &-extendido{
-            --c-panel-padding-vertical: var(--padding-10);
-            --c-panel-padding-horizontal: var(--padding-10);
+          @include padding(var(--c-panel-padding-extendido));
         }
     }
 
@@ -63,24 +60,24 @@
       }
 
       &__body {
-        background-color: var(--color-principal-8);
-        box-shadow: 0px 0px 10px 10px var(--body-color);
+        background-color: var(--c-panel-background-color-danger);
+        box-shadow: 0px 0px 10px 10px var(--c-panel-background-color-info);
       }
       &__header {
-        font-size: --header-font-size;
+        font-size: var(--c-panel-header-font-size);
         padding: 15px;
     
         &--xl {
-          --header-font-size: var(--font-size-xxl);
+          --c-panel-header-font-size: var(--font-size-xxl);
           padding: 20px;
         }
       }
       &__footer {
         padding: 10px;
-        font-size: --footer-font-size;
+        font-size: var(--c-panel-footer-font-size);
     
         &--xl {
-          --footer-font-size: var(--font-size-m);
+          --c-panel-footer-font-size: var(--font-size-m);
           padding: 15px;
         }
       }
