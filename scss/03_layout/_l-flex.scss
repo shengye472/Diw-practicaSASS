@@ -46,5 +46,20 @@
                 flex-grow: $i;
             }
         }
+
+        &--align-self{
+            &-center{
+                align-self: center;
+            }
+            &-start{
+                align-self: flex-start;
+            }
+            &-end{
+                align-self: flex-end;
+            }
+            &-strech{
+                align-self: stretch;
+            }
+          }
     }
 }

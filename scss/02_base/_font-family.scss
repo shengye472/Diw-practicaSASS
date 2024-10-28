@@ -1,5 +1,3 @@
 :root {
-    @each $name,$value in $fonts{
-        --font-family: #{$value};
-    }
+    //TODO: Importar otros tipos de tipografia
 }

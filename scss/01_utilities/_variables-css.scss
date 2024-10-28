@@ -1,42 +1,7 @@
 :root {
-
-  /*Variables color*/
-  @each $name, $values in $colors {
-    $counter: 1;
-
-    @each $color in $values {
-      --color-#{$name}-#{$counter}: #{$color};
-      $counter: $counter + 1;
-    }
-  }
-
-  /*Variables width*/
-  @each $name, $size in $width {
-    --width-#{$name}: #{$size};
-  }
-
-  /*Variables height*/
-  @each $name, $size in $height {
-    --height-#{$name}: #{$size};
-  }
-
-  /* Variables border-style*/
-  @each $value in $border-style {
-    --border-style-#{$value} : #{$value};
-  }
-
-  /* Variables border-radius*/
-  @each $key, $value in $border-radius {
-    --border-radius-#{$key} : #{$value};
-  }
-
-  /* Variables border-width*/
-  @each $key, $value in $border {
-    --border-width: #{$value};
-    --border-top-width-#{$key} : #{$value};
-    --border-bottom-width-#{$key} : #{$value};
-    --border-left-width-#{$key} : #{$value};
-    --border-right-width-#{$key} : #{$value};
+  /*Variables padding*/
+  @each $name, $value in $padding {
+    --padding-#{$name}: #{$value};
   }
 
   /*Variables margin*/
@@ -44,14 +9,28 @@
     --margin-#{$name}: #{$value};
   }
 
-  /*Variables padding*/
-  @each $name, $value in $padding {
-    --padding-#{$name}: #{$value};
-  }
-
   /*Variables font-size*/
   @each $name, $value in $font-size {
-    --font-size-#{$name}: #{$value};
+    @if $name == "" {
+      --font-size: #{$value};
+    } @else {
+      --font-size-#{$name}: #{$value};
+    }
+  }
+
+  /*Variables height*/
+  @each $name, $size in $height {
+    --height-#{$name}: #{$size};
+  }
+
+  /*Variables width*/
+  @each $name, $size in $width {
+    --width-#{$name}: #{$size};
+  }
+
+  /* Variables border-width*/
+  @each $key, $value in $border {
+    --border-width-#{$key}: #{$value};
   }
 
   /*Variables shadow*/
@@ -59,9 +38,39 @@
     --shadow-#{$name}: #{$value};
   }
 
+  /*Variables color*/
+  @each $name, $values in $colors {
+    $counter: 1;
+    @each $color in $values {
+      @if $counter == 5 {
+        --color-#{$name}: #{$color};
+        --background-color-#{$name}: #{$color};
+      } @else {
+        --color-#{$name}-#{$counter}: #{$color};
+        --background-color-#{$name}-#{$counter}: #{$color};
+      }
+      $counter: $counter + 1;
+    }
+  }
+
+  /*Variables font-family*/
+  @each $name, $value in $fonts {
+    --font-family: #{$value};
+  }
+
+  /* Variables border-style*/
+  @each $value in $border-style {
+    --border-style-#{$value}: #{$value};
+  }
+
+  /* Variables border-radius*/
+  @each $key, $value in $border-radius {
+    --border-radius-#{$key}: #{$value};
+  }
+
   /* Variables text-align*/
-  @each $name, $value in $text-align {
-    --text-align-#{$name} : #{$value};
+  @each $name in $text-align {
+    --text-align-#{$name}: #{$name};
   }
 
   /* Variable text-decoration*/
@@ -74,12 +83,13 @@
     --background--#{$name}: #{$value};
   }
 
-  @each $name, $value in $position {
-    --position-#{$name}: #{$value};
+  /*Variables display position*/
+  @each $name in $position {
+    --position-#{$name}: #{$name};
   }
 
+  /*Variables position move*/
   @each $name, $value in $position-move {
-    --position--right-#{$name}: #{$value};
-    --position--left-#{$name}: #{$value};
+    --position--#{$name}: #{$value};
   }
 }

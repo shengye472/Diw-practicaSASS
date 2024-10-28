@@ -5,6 +5,8 @@
     --c-panel-vertical-height: var(--height-90pc);
     --c-panel-horizontal-width: var(--width-90pc);
     --c-panel-horizontal-height: var(--height-60pc);
+    --footer-font-size: var(--font-size-xs);
+    --header-font-size: var(--font-size-xl);
 
     &--funcion{
         &-principal {
@@ -24,6 +26,11 @@
     }
 
     &--estilo{
+        padding-top: var(--c-panel-padding-vertical);
+        padding-bottom: var(--c-panel-padding-vertical);
+        padding-left: var(--c-panel-padding-horizontal);
+        padding-right: var(--c-panel-padding-horizontal);
+
         &-compacto{
             --c-panel-padding-vertical: var(--padding-2);
             --c-panel-padding-horizontal: var(--padding-2);
@@ -38,13 +45,43 @@
         }
     }
 
-    &__vertical {
-        width: var(--c-panel-vertical-width);
-        height: var(--c-panel-vertical-height);
-    }
+    &--type {
+        &-vertical {
+          width: var(--c-panel-vertical-width);
+          height: var(--c-panel-vertical-height);
+        }
+    
+        &-horizontal {
+          width: var(--c-panel-horizontal-width);
+          height: var(--c-panel-horizontal-height);
+        }
+    
+        &-cuadrado {
+          width: var(--c-panel-horizontal-width);
+          height: var(--c-panel-horizontal-width);
+        }
+      }
 
-    &__horizontal {
-        width: var(--c-panel-horizontal-width);
-        height: var(--c-panel-horizontal-height);
-    }
+      &__body {
+        background-color: var(--color-principal-8);
+        box-shadow: 0px 0px 10px 10px var(--body-color);
+      }
+      &__header {
+        font-size: --header-font-size;
+        padding: 15px;
+    
+        &--xl {
+          --header-font-size: var(--font-size-xxl);
+          padding: 20px;
+        }
+      }
+      &__footer {
+        padding: 10px;
+        font-size: --footer-font-size;
+    
+        &--xl {
+          --footer-font-size: var(--font-size-m);
+          padding: 15px;
+        }
+      }
 }

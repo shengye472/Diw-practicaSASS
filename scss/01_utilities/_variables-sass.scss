@@ -1,35 +1,22 @@
 $padding: (
-    "2": 2px,
-    "4": 4px,
-    "6": 6px,
-    "8": 8px,
-    "10": 10px,
-    "14": 14px,
-    "20": 20px,
-    "24": 24px,
-    "36": 36px,
-    "48": 48px,
-    "54": 54px,
-    "60": 60px
+    "1": 2px,
+    "2": 4px,
+    "3": 6px,
+    "4": 8px,
+    "5": 10px,
+    "6": 14px,
+    "7": 20px,
+    "8": 24px,
+    "9": 36px,
+    "10": 48px
 );
 
-$margin: (
-    "2": 2px,
-    "4": 4px,
-    "6": 6px,
-    "8": 8px,
-    "10": 10px,
-    "14": 14px,
-    "20": 20px,
-    "24": 24px,
-    "36": 36px,
-    "48": 48px
-);
+$margin: $padding;
 
 $font-size: (
     "xs": "10px",
     "s":"14px",
-    "sm":"16px",
+    "":"16px",
     "m": "20px",
     "l": "24px",
     "xl": "32px",
@@ -86,62 +73,14 @@ $height: (
     "100pc": 100%
 );
 
-$width: (
-    // Valores en píxeles de 50 en 50
-    "10": 10px,
-    "20": 20px,
-    "30": 30px,
-    "40": 40px,
-    "50": 50px,
-    "100": 100px,
-    "150": 150px,
-    "200": 200px,
-    "250": 250px,
-    "300": 300px,
-    "350": 350px,
-    "400": 400px,
-    "450": 450px,
-    "500": 500px,
-    "550": 550px,
-    "600": 600px,
-    "650": 650px,
-    "700": 700px,
-    "750": 750px,
-    "800": 800px,
-    "850": 850px,
-    "900": 900px,
-    "950": 950px,
-    "1000": 1000px,
-
-    // Valores en porcentajes de 5 en 5
-    "5pc": 5%,
-    "10pc": 10%,
-    "15pc": 15%,
-    "20pc": 20%,
-    "25pc": 25%,
-    "30pc": 30%,
-    "35pc": 35%,
-    "40pc": 40%,
-    "45pc": 45%,
-    "50pc": 50%,
-    "55pc": 55%,
-    "60pc": 60%,
-    "65pc": 65%,
-    "70pc": 70%,
-    "75pc": 75%,
-    "80pc": 80%,
-    "85pc": 85%,
-    "90pc": 90%,
-    "95pc": 95%,
-    "100pc": 100%
-);
+$width: $height;
 
 $border: (
     "1": 1px,
     "2": 2px,
-    "4": 4px,
-    "6": 6px,
-    "10": 10px
+    "3": 4px,
+    "4": 6px,
+    "5": 10px
 );
 
 $shadow: (
@@ -197,9 +136,9 @@ $border-radius: (
 );
 
 $text-align: (
-    "left": "left",
-    "center": "center",
-    "right": "right"
+    "left",
+    "center",
+    "right"
 );
 $text-decoration: (
     "none": "none",
@@ -209,8 +148,8 @@ $background: (
     "none": "none"
 );
 $position: (
-    "absolute": "absolute",
-    "relative": "relative"
+    "absolute",
+    "relative"
 );
 $position-move: (
     10: 10px,

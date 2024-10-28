@@ -2,10 +2,15 @@
     $counter: 1;
 
     @each $color in $values {
-        .g--background-#{$name}-#{$counter} {
-            background-color: var(--color-#{$name}-#{$counter});
+        @if $counter == 5 {
+            .g--background-#{$name} {
+                background-color: var(--color-#{$name}-#{$counter});
+            }
+        }@else{
+            .g--background-#{$name}-#{$counter} {
+                background-color: var(--color-#{$name}-#{$counter});
+            }
         }
-
         $counter: $counter + 1;
     }
 

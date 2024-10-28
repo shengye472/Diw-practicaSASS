@@ -1,5 +1,11 @@
-@each $key,$value in $font-size {
-    .g--font-size-#{$key}{
-        font-size: #{$value};
+@each $key, $value in $font-size {
+  @if $key == "" {
+    .g--font-size {
+      font-size: #{$value};
     }
+  } @else {
+    .g--font-size-#{$key} {
+      font-size: #{$value};
+    }
+  }
 }
