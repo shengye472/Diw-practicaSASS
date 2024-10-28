@@ -1,87 +1,85 @@
-.c-panel{
-    --c-panel-padding-comodo: var(--padding-2);
-    --c-panel-padding-compacto: var(--padding-3);
-    --c-panel-padding-extendido: var(--padding-5);
+.c-panel {
+  --c-panel-padding-comodo: var(--padding-2);
+  --c-panel-padding-compacto: var(--padding-3);
+  --c-panel-padding-extendido: var(--padding-5);
 
-    --c-panel-large-size: var(--width-90pc);
-    --c-panel-small-size: var(--height-60pc);
+  --c-panel-large-size: var(--width-90pc);
+  --c-panel-small-size: var(--height-60pc);
 
-    --c-panel-footer-font-size: var(--font-size-xs);
-    --c-panel-header-font-size: var(--font-size-xl);
-    --c-panel-footer-xl-font-size: var(--font-size-m);
-    --c-panel-header-xl-font-size: var(--font-size-xxl);
+  --c-panel-footer-font-size: var(--font-size-xs);
+  --c-panel-header-font-size: var(--font-size-xl);
+  --c-panel-footer-xl-font-size: var(--font-size-m);
+  --c-panel-header-xl-font-size: var(--font-size-xxl);
 
-    --c-panel-background-color-principal: var(--color-principal-8);
-    --c-panel-background-color-alternative: var(--color-alternative-8);
-    --c-panel-background-color-danger: var(--color-red-8);
-    --c-panel-background-color-info: var(--color-blue-8);
+  --c-panel-background-color-principal: var(--color-principal-8);
+  --c-panel-background-color-alternative: var(--color-alternative-8);
+  --c-panel-background-color-danger: var(--color-red-8);
+  --c-panel-background-color-info: var(--color-blue-8);
 
-    &--function{
-        &-principal {
-            background-color: var(--c-panel-background-color-principal);
-        }
+  --c-panel-shadow-color: var(--color-grey-2);
 
-        &-alternative {
-            background-color: var(--c-panel-background-color-alternative);
-        }
-
-        &-danger {
-            background-color: var(--c-panel-background-color-danger);
-        }
-        &-info{
-            background-color:var(--c-panel-background-color-info);
-        }
+  &--function {
+    &-principal {
+      background-color: var(--c-panel-background-color-principal);
     }
-
-    &--estilo{
-        &-compacto{
-            @include padding(var(--c-panel-padding-compacto));
-        }
-        &-comodo{
-          @include padding(var(--c-panel-padding-comodo));
-        }
-        &-extendido{
-          @include padding(var(--c-panel-padding-extendido));
-        }
+    &-alternative {
+      background-color: var(--c-panel-background-color-alternative);
     }
+    &-danger {
+      background-color: var(--c-panel-background-color-danger);
+    }
+    &-info {
+      background-color: var(--c-panel-background-color-info);
+    }
+  }
 
-    &--type {
-        &-vertical {
-          width: var(--c-panel-small-size);
-          height: var(--c-panel-large-size);
-        }
-    
-        &-horizontal {
-          width: var(--c-panel-large-size);
-          height: var(--c-panel-small-size);
-        }
-    
-        &-cuadrado {
-          width: var(--c-panel-large-size);
-          height: var(--c-panel-large-size);
-        }
-      }
+  &--estilo {
+    &-compacto {
+      @include padding(var(--c-panel-padding-compacto));
+    }
+    &-comodo {
+      @include padding(var(--c-panel-padding-comodo));
+    }
+    &-extendido {
+      @include padding(var(--c-panel-padding-extendido));
+    }
+  }
 
-      &__body {
-        background-color: var(--c-panel-background-color-danger);
-        box-shadow: 0px 0px 10px 10px var(--c-panel-background-color-info);
-      }
-      &__header {
-        font-size: var(--c-panel-header-font-size);
-        padding: 15px;
-    
-        &--xl {
-          --c-panel-header-font-size: var(--c-panel-header-xl-font-size);
-          padding: 20px;
-        }
-      }
-      &__footer {
-        padding: 10px;
-        font-size: var(--c-panel-footer-font-size);
-    
-        &--xl {
-          --c-panel-footer-font-size: var(--c-panel-footer-xl-font-size);
-          padding: 15px;
-        }
-      }
+  &--type {
+    &-vertical {
+      width: var(--c-panel-small-size);
+      height: var(--c-panel-large-size);
+    }
+    &-horizontal {
+      width: var(--c-panel-large-size);
+      height: var(--c-panel-small-size);
+    }
+    &-cuadrado {
+      width: var(--c-panel-large-size);
+      height: var(--c-panel-large-size);
+    }
+  }
+
+  &__body {
+    background-color: var(--c-panel-background-color-info);
+    box-shadow: 0px 0px 10px 10px var(--c-panel-shadow-color);
+  }
+  &__header {
+    font-size: var(--c-panel-header-font-size);
+    padding: 15px;
+
+    &--xl {
+      --c-panel-header-font-size: var(--c-panel-header-xl-font-size);
+      padding: 20px;
+    }
+  }
+  &__footer {
+    padding: 10px;
+    font-size: var(--c-panel-footer-font-size);
+
+    &--xl {
+      --c-panel-footer-font-size: var(--c-panel-footer-xl-font-size);
+      padding: 15px;
+    }
+  }
 }
